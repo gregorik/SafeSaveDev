@@ -27,9 +27,9 @@ static FString GlobalDirtyPackageName = TEXT("");
 
 void SSafeSaveToolbar::Construct(const FArguments& InArgs)
 {
-	bIsDirty = false;
-	bIsConnected = false;
-	bHasRemoteChanges = false;
+	bIsDirty = true;
+	bIsConnected = true;
+	bHasRemoteChanges = true;
 
 	ChildSlot
 		[
