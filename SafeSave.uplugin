@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.1",
+	"FriendlyName": "SafeSave",
+	"Description": "Source Control Safety Net for Git and Plastic SCM",
+	"Category": "Editor",
+	"CreatedBy": "GregOrigin",
+	"CreatedByURL": "www.gregorigin.com",
+	"DocsURL": "https://gregorigin.com/SafeSave/",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.7.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SafeSave",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
+}
