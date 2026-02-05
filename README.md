@@ -28,3 +28,70 @@
 <p><strong>SafeSave keeps your pipeline safe, visible, and low‑risk — without changing how you already work.</strong></p>
 
 Code by Andras Gregori @ https://gregorigin.com/
+
+---
+
+Legacy Description follows (v0.1 - 0.5, 2025 version):
+
+
+🛑 STOP SCREAMING "WHO LOCKED THE MAP?!"
+
+Merge conflicts kill momentum.
+Unreal Engine’s native Source Control integration is powerful, but "silent." It lets you edit files that are stale. It lets you work on maps that your teammates have locked. By the time you try to save, it’s too late—work is lost.
+
+SafeSave changes the paradigm. It is an Air Traffic Controller that lives next to your Play button. It creates a direct, visual link between your local work and the server status, warning you of danger before you make a mistake.
+
+🚦 THE TRAFFIC LIGHT SYSTEM
+
+SafeSave replaces complex context menus with a single, intelligent status indicator:
+
+    🟢 Green (Synced): You are safe. Your files match the server perfectly.
+
+    🔵 Blue (Update Available): The "Killer" Feature. SafeSave effectively "looks into the future," detecting that a teammate has pushed code while you were working. Click to Pull/Sync instantly.
+
+    🟠 Orange (Push Changes): You have unsaved work. Click to Save & Submit without opening four different windows.
+
+    🔴 Red (Conflict Imminent): DANGER. You have local changes AND the server has updates. The button triggers a Safe-Update Protocol (Force Save -> Sync -> Native Merge) to protect your data.
+
+🔒 INSTANT LOCK DETECTION (Billy Mode)
+
+If you use Perforce (P4) or Git LFS Locking:
+SafeSave scans the lock status of assets the moment you open them. If a file is checked out by another user, you get an immediate, non-blocking Toast Notification:
+
+    "LOCKED by Teammate: [Username]"
+
+No more wasted hours working on a file you can't save.
+
+🛠️ TECHNICAL ARCHITECTURE
+
+SafeSave is engineered for high-performance production environments. It is not a Blueprint widget; it is a native C++ Editor Module.
+
+    Zero-Tick Overhead: Uses Slate Active Timers (1Hz polling) instead of Tick(). It costs 0.00ms on the Game Thread when idle.
+
+    Deep Memory Scanning: Uses TObjectIterator to detect dirty states in RAM, offering faster feedback than disk scanning.
+
+    Ghost Filtering: Aggressively ignores /Temp/, /Engine/, and World Partition InstanceOf artifacts to prevent false positives.
+
+    Native UI injection: Integrates seamlessly into UToolMenus.
+
+🔌 COMPATIBILITY
+
+SafeSave acts as a HUD (Heads-Up Display) for standard Unreal Engine Source Control. It works with:
+
+    Perforce (P4)
+
+    Git (Beta & Experimental)
+
+    PlasticSCM (Unity DevOps)
+
+    Anchorpoint (Compatible workflow)
+
+    Diversion
+
+📦 WHAT YOU GET
+
+    The SafeSave Editor Plugin (Win64).
+
+    SafeSave Professional: Lifetime License for commercial use.
+
+    SafeSave Personal: License for individual creators.
