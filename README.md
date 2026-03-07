@@ -2,7 +2,13 @@
 <h2>SafeSave — Source Control Safety for Unreal Engine</h2>
 <p>SafeSave is a compact UE5 editor toolbar that keeps your source control status and unsaved assets impossible to ignore. It reduces risky syncs, prevents lost work, and keeps teams aligned with clear, always‑on signals.</p>
 
-<h3>USP & Benefits</h3>
+[Watch it in action](https://www.youtube.com/watch?v=SCsfbiTNc30)<br>
+[Read the manual](https://gregorigin.com/SafeSave/)<br>
+[Full version on Fab](https://www.fab.com/listings/3efed7b3-085b-44c2-840a-eb47615f8e40)<br>
+[Legacy manual](https://gregorigin.gitbook.io/safesave/)<br>
+
+
+<h3>What it does</h3>
 <ul>
   <li>🛡️ <strong>Always‑On Safety Signals</strong> — The toolbar label shows <em>branch/workspace | state</em> at a glance.</li>
   <li>👁️ <strong>Clear Risk Visibility</strong> — Conflicts, Diverged, Behind, Changes, Unsaved, and Login Required are color‑coded.</li>
@@ -10,10 +16,6 @@
   <li>🔒 <strong>Safety Gates</strong> — Pull/Push/Update are disabled unless the workspace is clean and assets are saved.</li>
   <li>🔁 <strong>Auto‑Fetch (Git‑Only)</strong> — Optional background fetch keeps refs fresh without touching local files.</li>
   <li>🔔 <strong>Toast Feedback</strong> — Optional status‑change toasts keep you informed in full‑screen viewports.</li>
-</ul>
-
-<h3>What You Get</h3>
-<ul>
   <li>✅ <strong>Git + Plastic SCM Support</strong> — Uses the active UE Source Control provider.</li>
   <li>✅ <strong>Non‑Intrusive Workflow</strong> — No forced staging or commits. SafeSave surfaces risk only.</li>
   <li>✅ <strong>Fast Polling Controls</strong> — Tune refresh intervals in Editor Preferences.</li>
